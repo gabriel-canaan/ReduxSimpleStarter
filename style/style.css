@@ -1,0 +1,77 @@
+/* Sign-in form */
+.signin-form {
+  max-width: 360px;
+  margin: 60px auto;
+  padding: 32px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.signin-form h2 {
+  margin: 0 0 24px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.signin-form div {
+  margin-bottom: 16px;
+}
+
+.signin-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+}
+
+.signin-form input[type="text"],
+.signin-form input[type="password"] {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  transition: border-color 0.15s;
+}
+
+.signin-form input[type="text"]:focus,
+.signin-form input[type="password"]:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.15);
+}
+
+.signin-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.signin-form button[type="submit"]:hover {
+  background: #357abd;
+}
+
+.signin-form .error {
+  padding: 8px 12px;
+  margin-bottom: 16px;
+  background: #fdf0f0;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  color: #c0392b;
+  font-size: 13px;
+}
