@@ -1,7 +1,7 @@
 import _$ from 'jquery';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TestUtils from 'react-addons-test-utils';
+import TestUtils from 'react-dom/test-utils';
 import jsdom from 'jsdom';
 import chai, { expect } from 'chai';
 import chaiJquery from 'chai-jquery';
@@ -17,13 +17,15 @@ const $ = _$(window);
 chaiJquery(chai, chai.util, $);
 
 function renderComponent(ComponentClass, props = {}, state = {}) {
-  const componentInstance =  TestUtils.renderIntoDocument(
+  const div = document.createElement('div');
+  document.body.appendChild(div);
+  ReactDOM.render(
     <Provider store={createStore(reducers, state)}>
       <ComponentClass {...props} />
-    </Provider>
+    </Provider>,
+    div
   );
-
-  return $(ReactDOM.findDOMNode(componentInstance));
+  return $(div);
 }
 
 $.fn.simulate = function(eventName, value) {
