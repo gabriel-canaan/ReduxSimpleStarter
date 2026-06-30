@@ -1,3 +1,142 @@
+/* Home page */
+.home {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.home-hero {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.home-hero h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 16px;
+}
+
+.home-hero p {
+  font-size: 18px;
+  color: #666;
+  margin: 0 0 32px;
+  line-height: 1.6;
+}
+
+.home-cta {
+  display: inline-block;
+  padding: 12px 32px;
+  background: #4a90e2;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.home-cta:hover {
+  background: #357abd;
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-features {
+  display: flex;
+  gap: 24px;
+}
+
+.feature {
+  flex: 1;
+  padding: 24px;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.feature h3 {
+  margin: 0 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.feature p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.feature code {
+  background: #eef2f7;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 13px;
+  color: #4a90e2;
+}
+
+/* Resources page */
+.resources {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 48px 24px;
+}
+
+.resources h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 8px;
+}
+
+.resources > p {
+  color: #666;
+  font-size: 15px;
+  margin: 0 0 32px;
+}
+
+.resource-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.resource-item {
+  padding: 24px;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  background: #fafafa;
+  min-width: 200px;
+}
+
+.resource-item h4 {
+  margin: 0 0 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.resource-item ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.resource-item li {
+  padding: 6px 0;
+  color: #555;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.resource-item li:last-child {
+  border-bottom: none;
+}
+
 /* Sign-in form */
 .signin-form {
   max-width: 360px;
@@ -64,6 +203,13 @@
 
 .signin-form button[type="submit"]:hover {
   background: #357abd;
+}
+
+.signin-hint {
+  margin: -8px 0 16px;
+  font-size: 12px;
+  color: #888;
+  text-align: center;
 }
 
 .signin-form .error {

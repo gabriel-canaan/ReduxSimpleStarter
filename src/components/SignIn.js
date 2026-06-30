@@ -34,6 +34,7 @@ class SignIn extends Component {
       <div className='signin-form'>
         <h2>Sign In</h2>
         {error && <p className='error'>{error}</p>}
+        <p className='signin-hint'>Use <strong>user</strong> / <strong>password</strong></p>
         <form onSubmit={e => this.onSubmit(e)}>
           <div>
             <label>Username</label>
